@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/rock/device.mk)
 
 # Inherit some common
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/halcyon/config/common.mk)
 
 # Bootanimation Res
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -23,7 +23,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 USE_PIXEL_CHARGER := true
 PERF_ANIM_OVERRIDE := true
 # Maintainer Name
-INFINITY_MAINTAINER := Asmodeus7999
+HALCYON_MAINTAINER := endlevell
 # Whether Including Google Apps
 WITH_GAPPS := false
 # Blur
@@ -31,12 +31,12 @@ TARGET_SUPPORTS_BLUR := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rock
-PRODUCT_NAME := infinity_rock
+PRODUCT_NAME := halcyon_rock
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 22071219AI
 PRODUCT_MANUFACTURER := Xiaomi
 
-BUILD_HOSTNAME := picasso09
+BUILD_HOSTNAME := endlevell
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="missi_phone_global_ext4-user 14 UP1A.231005.007 V816.0.12.0.ULUMIXM release-keys" \
     BuildFingerprint=POCO/stone_p_global/stone:14/UP1A.231005.007/V816.0.12.0.ULUMIXM:user/release-keys \

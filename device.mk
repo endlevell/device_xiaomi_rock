@@ -416,3 +416,6 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 # ConsumerIr
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.example
+
+# A17: vendor is FCM level 6 / kernel 5.10; A17 dropped those matrices
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false

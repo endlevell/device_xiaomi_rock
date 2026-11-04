@@ -250,3 +250,6 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 # Inherit the proprietary files
 include vendor/xiaomi/rock/BoardConfigVendor.mk
+
+# A17 bring-up: vendor MTK sepolicy violates new platform neverallows
+SELINUX_IGNORE_NEVERALLOWS := true
